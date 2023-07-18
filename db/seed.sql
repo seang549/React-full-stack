@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS song_db;
-CREATE DATABASE song_db;
+-- DROP DATABASE IF EXISTS song_db;
+-- CREATE DATABASE song_db;
 
-\c song_db;
+-- \c song_db;
 
 DROP TABLE IF EXISTS song_tb;
 CREATE TABLE song_tb (
