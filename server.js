@@ -12,6 +12,7 @@ const pool = new Pool ({
 
 const app = express();
 app.use(express.json());
+app.use(express.static('./dist'))
 
 app.use(cors({
     origin: ['http://localhost:5173', 'https://react-fullstack-mvp.onrender.com', 'https://endearing-horse-fba3c4.netlify.app' ]
