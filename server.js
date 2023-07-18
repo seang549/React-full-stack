@@ -43,7 +43,6 @@ app.get('/song_tb/:id', async(req, res) => {
 
 app.post('/song_tb', async(req, res) => {
     try{
-        console.log(req.body)
         let {song, author} = req.body;
         let result = await pool.query('INSERT INTO song_tb (song, author) VALUES ($1, $2) RETURNING *', [song, author])
         res.status(201).json(result.rows[0])

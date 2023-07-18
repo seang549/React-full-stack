@@ -21,11 +21,20 @@ h2 {
 
 .close {
     position: absolute;
-    top: 5px;
+    top: 55px;
     right: 5px;
     font-size: 18px;
     cursor: pointer;
     color: #ff0000;
+}
+
+.edit-btn {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #ff0000;
 }
 
 input[type='text'] {

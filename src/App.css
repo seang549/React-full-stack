@@ -8,4 +8,6 @@
 
 .card {
   padding: 2em;
+  display: flex;
+  text-align: center;
 }
