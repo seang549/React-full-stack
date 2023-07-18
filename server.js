@@ -57,6 +57,7 @@ app.put('/song_tb/:id', async(req, res) => {
     try{
         let {id} = req.params;
         let {song, author} = req.body;
+
         let result = await pool.query('SELECT * FROM song_tb WHERE id = $1', [id])
         if(result.rowCount === 0) {
             res.type('text/plain').send('Movie not found')
@@ -66,7 +67,7 @@ app.put('/song_tb/:id', async(req, res) => {
             songTitle: song || currentSong.song,
             songAuthor: song || currentSong.author
         }
-        await pool.query('UPDATE song_tb SET song = $1, author = $2 WHERE id = $3 RETURNING *', [updatedSong.song, updatedSong.song, id])
+        await pool.query('UPDATE song_tb SET song = $1, author = $2 WHERE id = $3 RETURNING *', [updatedSong.songTitle, updatedSong.songAuthor, id])
         res.status(201).json(updatedSong)
     }
     catch(err) {

@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <Header refresh={refresh} setSongs={setSongs}/>
-      <Songs songs={songs} isRefresh={isRefresh} refresh={refresh}/>
+      <Songs songs={songs} setSongs={setSongs} isRefresh={isRefresh} refresh={refresh}/>
     </>
   )
 }

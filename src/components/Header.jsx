@@ -22,11 +22,11 @@ const Header = ({songs, setSongs, refresh}) => {
 
             refresh(true)
 
-            fetch('http://localhost:8002/song_tb')
-            .then((response) => response.json())
-            .then((data) => {
-                setSongs(data)
-            })
+            // fetch('http://localhost:8002/song_tb')
+            // .then((response) => response.json())
+            // .then((data) => {
+            //     setSongs(data)
+            // })
         })
     }
     
