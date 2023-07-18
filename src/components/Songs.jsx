@@ -6,7 +6,7 @@ const Songs = ({songs, setSongs, isRefresh, refresh}) => {
 
     useEffect(() => {
         if(isRefresh) {
-            fetch('http://localhost:8002/song_tb')
+            fetch('https://react-fullstack-mvp.onrender.com/song_tb')
             .then((res) => {
                 return res.json()
             })

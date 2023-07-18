@@ -25,7 +25,7 @@ const SongsItem = ({ song, refresh }) => {
   };
 
   const updateSong = () => {
-    fetch(`http://localhost:8002/song_tb/${song.id}`, {
+    fetch(`https://react-fullstack-mvp.onrender.com/song_tb/${song.id}`, {
       method: 'PUT',
       headers: {
         'Content-type': 'application/json',
@@ -45,7 +45,7 @@ const SongsItem = ({ song, refresh }) => {
   };
 
   const deleteSong = () => {
-    fetch(`http://localhost:8002/song_tb/${song.id}`, {
+    fetch(`https://react-fullstack-mvp.onrender.com/song_tb/${song.id}`, {
       method: 'DELETE',
     })
       .then(() => {

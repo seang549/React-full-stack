@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     const getData = async () => {
-      const res = await fetch('http://localhost:8002/song_tb')
+      const res = await fetch('https://react-fullstack-mvp.onrender.com/song_tb')
       const data = await res.json()
       setSongs(data)
     }

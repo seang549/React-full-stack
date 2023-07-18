@@ -12,7 +12,7 @@ const Header = ({songs, setSongs, refresh}) => {
         const newSong = {song: songTitle, author: songAuthor}
 
         
-        fetch('http://localhost:8002/song_tb', {
+        fetch('https://react-fullstack-mvp.onrender.com/song_tb', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
