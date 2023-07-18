@@ -52,6 +52,7 @@
 // export default SongsItem
 
 import React, { useState } from 'react';
+import '../SongsItem.css'
 
 const SongsItem = ({ song, refresh }) => {
   const [editMode, setEditMode] = useState(false);
@@ -125,8 +126,8 @@ const SongsItem = ({ song, refresh }) => {
             value={updatedData.author}
             onChange={handleChange}
           />
-          <button onClick={updateSong}>Save</button>
-          <button onClick={handleCancelEdit}>Cancel</button>
+          <button id='save-button' onClick={updateSong}>Save</button>
+          <button id='cancel-button' onClick={handleCancelEdit}>Cancel</button>
         </>
       ) : (
         <>

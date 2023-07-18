@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import '../Header.css'
+
 const Header = ({songs, setSongs, refresh}) => {
     const [songTitle, setSongTitle] = useState("")
     const [songAuthor, setSongAuthor] = useState("")
@@ -7,7 +9,7 @@ const Header = ({songs, setSongs, refresh}) => {
     const addSong = () => {
         
         const newSong = {song: songTitle, author: songAuthor}
-        // const newAuthor = {songAuthor}
+
         
         fetch('http://localhost:8002/song_tb', {
             method: 'POST',
@@ -21,20 +23,14 @@ const Header = ({songs, setSongs, refresh}) => {
             console.log('new song added!')
 
             refresh(true)
-
-            // fetch('http://localhost:8002/song_tb')
-            // .then((response) => response.json())
-            // .then((data) => {
-            //     setSongs(data)
-            // })
         })
     }
     
     return (
     <div id ="song-header" className="header">
-        <h1>🎧My Personal MixTape🎧</h1>
-        <input type='text' value={songTitle} onChange={(e) => setSongTitle(e.target.value)}/>
-        <input type='text' value={songAuthor} onChange={(e) => setSongAuthor(e.target.value)}/>
+        <h1 className="header-title">🎧My Personal MixTape🎧</h1>
+        <input type='text' className="input-field" value={songTitle} onChange={(e) => setSongTitle(e.target.value)} placeholder="Song title..."/>
+        <input type='text' className="input-field" value={songAuthor} onChange={(e) => setSongAuthor(e.target.value)} placeholder="Song author..."/>
         <span className = 'add-button' onClick={addSong}>Add</span>
     </div>
     )
