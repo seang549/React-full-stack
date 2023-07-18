@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-    origin: 'http://localhost:5173'
+    origin: ['http://localhost:5173', 'https://react-fullstack-mvp.onrender.com', 'https://endearing-horse-fba3c4.netlify.app' ]
 }))
 
 app.get('/song_tb', async(req, res) => {
