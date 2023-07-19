@@ -9,6 +9,9 @@ const Footer = () => {
     <a href="https://www.linkedin.com/in/sean-a-guerrero/" target="_blank">
         <i className="fab fa-linkedin"></i>
     </a>
+    <a href="https://www.youtube.com/@CodingWithSean" target="_blank">
+        <i className="fab fa-youtube"></i>
+    </a>
   </div>
 )}
 
