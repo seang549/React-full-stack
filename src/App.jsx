@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Loading from './components/Loading'
 import Songs from './components/Songs'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 import './App.css'
 
@@ -28,6 +29,7 @@ function App() {
     <>
       <Header refresh={refresh} setSongs={setSongs}/>
       <Songs songs={songs} setSongs={setSongs} isRefresh={isRefresh} refresh={refresh}/>
+      <Footer />
     </>
   )
 }

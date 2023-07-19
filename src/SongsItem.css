@@ -3,14 +3,16 @@
     padding: 10px;
     margin: 10px;
     max-width: 1200px;
-    background-color: #A49C9A ;
+    background-color: #a59c9a ;
     cursor: pointer;
     position: relative;
     border-radius: 25px;
+    transition: transform 0.2s;
 }
 
 .card:hover {
     background-color: #d3d3d3;
+    transform: translateY(-5px);
   }
 
 h2 {
@@ -80,132 +82,5 @@ input[type='text'] {
     background-color: #ffcccc;
     cursor: not-allowed;
 }
-
-
-
-
-/* option 2 */
-/* .card {
-    background-color: #f4f6f8;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .card h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    color: #333;
-  }
-  
-  .card input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-  }
-  
-  .card button {
-    padding: 8px 16px;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  .card #save-button {
-    background-color: #4caf50;
-    color: #fff;
-  }
-  
-  .card #cancel-button {
-    background-color: #f44336;
-    color: #fff;
-  }
-  
-  .card .close {
-    color: #f44336;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  
-  .card .close:hover {
-    color: #d32f2f;
-  } */
-  
-  
-  
-  
-  
-  
-  
-  /* option3
-  
-  
-  /* SongsItemStyles.css */
-/*  
-.card {
-    background-color: #fff2d7;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .card:hover {
-    background-color: #e0e0e0;
-  }
-  
-  .card h2 {
-    color: #333;
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  
-  .card span.close {
-    float: right;
-    color: #ff5858;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .card span.close:hover {
-    color: #ff0000;
-  }
-  
-  .card input[type='text'] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .card button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 8px 16px;
-    margin-right: 8px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .card button#cancel-button {
-    background-color: #ccc;
-  }
-  
-  .card button:hover {
-    background-color: #45a049;
-  } */
-  
 
   

@@ -1,0 +1,18 @@
+.footer-icons {
+display: flex; 
+align-items: center; 
+justify-content: center; 
+margin-top: 20px;
+}
+
+.footer-icons p {
+margin-right: 10px;
+color: #f2f2f2; 
+}
+
+
+.footer-icons a {
+color: #f2f2f2;
+font-size: 20px;
+margin: 0 5px; 
+}
