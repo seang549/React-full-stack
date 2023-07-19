@@ -6,7 +6,7 @@ This project is a simple React application that displays a list of songs fetched
 
 To get started with the project, follow these instructions:
 
-1. Clone the repository: [repository-url](https://github.com/seang549/React-full-stack)
+1. Clone the repository: [https://github.com/seang549/React-full-stack](https://github.com/seang549/React-full-stack)
 2. Install the required dependencies by running `npm install` in the project directory.
 3. Start the development server with `npm run start`.
 4. Open your web browser and navigate to `http://localhost:5173/` to view the app.
